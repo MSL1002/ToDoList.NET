@@ -4,8 +4,11 @@ using ToDo.Models;
 
 namespace ToDo.Controllers
 {
-    public class HomeController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class HomeController : ControllerBase
     {
+        
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,18 +18,18 @@ namespace ToDo.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return Ok();
         }
 
         public IActionResult Privacy()
         {
-            return View();
+            return Ok();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return Ok(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
         public IActionResult ex()

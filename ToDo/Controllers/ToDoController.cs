@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ToDo.Data;
 
 namespace ToDo.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class ToDoController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -14,79 +17,51 @@ namespace ToDo.Controllers
         }
 
         // Displays the list of to-do items
-        public IActionResult Index()
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
         {
-            return View(_context.ToDos.ToList());
+            return Ok(_context.ToDos.ToList());
         }
+
+
+        #region SingleGet
+        [HttpGet("{id}")]
+        // gets a single ToDo item
+        public async Task<IActionResult> GetOne(int id)
+        {
+            var item = await _context.ToDos.FindAsync(id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(item);
+        }
+
+        #endregion
 
         #region Create
-
-        // Displays the form to create a new to-do item
-        public IActionResult Create()
-        {
-            return View();
-        }
 
         // Handles the HTTP POST request to create a new to-do item
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(ToDo.Models.ToDo todo)
+        public async Task<IActionResult> Create(ToDo.Models.ToDo todo)
         {
-            if (ModelState.IsValid)
-            {
-                _context.ToDos.Add(todo);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            return View(todo);
+            _context.Add(todo);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetOne), new { id = todo.Id }, todo);
         }
 
         #endregion
 
-        #region Details
-
-        // Displays details of a specific to-do item
-        public IActionResult Details(int id)
-        {
-            if (id == null || _context.ToDos == null)
-            {
-                return RedirectToAction("Index");
-            }
-
-            var toDos = _context.ToDos.FirstOrDefault(x => x.Id == id);
-            if (toDos == null)
-            {
-                return NotFound();
-            }
-
-            return View(toDos);
-        }
-
-        #endregion
 
         #region Edit
 
-        // Displays the form to edit a specific to-do item
-        public IActionResult Edit(int? id)
-        {
-            if (id == null || _context.ToDos == null)
-            {
-                return RedirectToAction("Index");
-            }
-
-            var toDos = _context.ToDos.FirstOrDefault(x => x.Id == id);
-            if (toDos == null)
-            {
-                return NotFound();
-            }
-            return View(toDos);
-        }
-
         // Handles the HTTP POST request to edit a specific to-do item
-        [HttpPost]
+        [HttpPut("{id}")]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int? id, ToDo.Models.ToDo toDo)
+        public async Task<IActionResult> Edit(int? id, ToDo.Models.ToDo toDo)
         {
             if (id != toDo.Id)
             {
@@ -95,51 +70,33 @@ namespace ToDo.Controllers
             if (ModelState.IsValid)
             {
                 _context.ToDos.Update(toDo);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
-            return RedirectToAction("Index");
+            return Ok();
         }
 
         #endregion
 
         #region Delete
 
-        // Displays a confirmation page for deleting a specific to-do item
-        public IActionResult Delete(int id)
-        {
-            if (id == null || _context.ToDos == null)
-            {
-                return RedirectToAction("Index");
-            }
-
-            var toDos = _context.ToDos.FirstOrDefault(x => x.Id == id);
-            if (toDos == null)
-            {
-                return NotFound();
-            }
-
-            return View(toDos);
-        }
-
-        // Handles the HTTP POST request to delete a specific to-do item
-        [HttpPost]
+        // Handles the HTTP DELETE request to delete a specific to-do item
+        [HttpDelete("{id}")]
         [ValidateAntiForgeryToken]
         [ActionName("Delete")]
-        public IActionResult DeleteConfirm(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null || _context.ToDos == null)
+            var item = await _context.ToDos.FindAsync(id);
+
+            if (item == null)
             {
                 return NotFound();
             }
 
-            var toDos = _context.ToDos.FirstOrDefault(x => x.Id == id);
-            if (toDos != null)
-            {
-                _context.ToDos.Remove(toDos);
-                _context.SaveChanges();
-            }
+            _context.ToDos.Remove(item);
 
-            return RedirectToAction("Index");
+            await _context.SaveChangesAsync();
+
+            return Ok(item);
         }
 
         #endregion
