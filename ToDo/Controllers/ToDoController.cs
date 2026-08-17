@@ -45,12 +45,19 @@ namespace ToDo.Controllers
 
         // Handles the HTTP POST request to create a new to-do item
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ToDo.Models.ToDo todo)
+        public async Task<IActionResult> Create(ToDo.Models.DTOs.CreateItemToDo dto)
         {
-            _context.Add(todo);
+            var todoItem = new ToDo.Models.ToDo
+            {
+                Title = dto.Title,
+                Details = dto.Details,
+                Date = dto.Date,
+                IsDone = dto.IsDone,
+            };
+
+            _context.Add(todoItem);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetOne), new { id = todo.Id }, todo);
+            return CreatedAtAction(nameof(GetOne), new { id = todoItem.Id }, todoItem);
         }
 
         #endregion
@@ -60,7 +67,6 @@ namespace ToDo.Controllers
 
         // Handles the HTTP POST request to edit a specific to-do item
         [HttpPut("{id}")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, ToDo.Models.ToDo toDo)
         {
             if (id != toDo.Id)
@@ -81,8 +87,6 @@ namespace ToDo.Controllers
 
         // Handles the HTTP DELETE request to delete a specific to-do item
         [HttpDelete("{id}")]
-        [ValidateAntiForgeryToken]
-        [ActionName("Delete")]
         public async Task<IActionResult> Delete(int id)
         {
             var item = await _context.ToDos.FindAsync(id);
