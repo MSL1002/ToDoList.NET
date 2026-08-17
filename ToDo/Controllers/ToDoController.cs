@@ -66,27 +66,25 @@ namespace ToDo.Controllers
 
         #region Edit
 
-        // Handles the HTTP POST request to edit a specific to-do item
+        // Handles the HTTP PUT request to edit a specific to-do item
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(int? id, ToDo.Models.DTOs.CreateItemToDo dto)
         {
-            var todoItem = new ToDo.Models.ToDo
-            {
-                Title = dto.Title,
-                Details = dto.Details,
-                Date = dto.Date,
-                IsDone = dto.IsDone,
-            };
-            if (id != todoItem.Id)
+            var todoItem = await _context.ToDos.FindAsync(id);
+
+            if (todoItem == null)
             {
                 return NotFound();
             }
-            if (ModelState.IsValid)
-            {
-                _context.ToDos.Update(todoItem);
-                await _context.SaveChangesAsync();
-            }
-            return Ok();
+
+            todoItem.Title = dto.Title;
+            todoItem.Details = dto.Details;
+            todoItem.Date = dto.Date;
+            todoItem.IsDone = dto.IsDone;
+
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
 
         #endregion
