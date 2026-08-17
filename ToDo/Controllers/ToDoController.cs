@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using Humanizer;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ToDo.Data;
@@ -67,15 +68,22 @@ namespace ToDo.Controllers
 
         // Handles the HTTP POST request to edit a specific to-do item
         [HttpPut("{id}")]
-        public async Task<IActionResult> Edit(int? id, ToDo.Models.ToDo toDo)
+        public async Task<IActionResult> Edit(int? id, ToDo.Models.DTOs.CreateItemToDo dto)
         {
-            if (id != toDo.Id)
+            var todoItem = new ToDo.Models.ToDo
+            {
+                Title = dto.Title,
+                Details = dto.Details,
+                Date = dto.Date,
+                IsDone = dto.IsDone,
+            };
+            if (id != todoItem.Id)
             {
                 return NotFound();
             }
             if (ModelState.IsValid)
             {
-                _context.ToDos.Update(toDo);
+                _context.ToDos.Update(todoItem);
                 await _context.SaveChangesAsync();
             }
             return Ok();
