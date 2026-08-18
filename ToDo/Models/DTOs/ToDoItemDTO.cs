@@ -2,7 +2,7 @@
 
 namespace ToDo.Models.DTOs
 {
-    public class CreateItemToDo
+    public class ToDoItemDTO
     {
 
         [Required(ErrorMessage = "Title is required")]

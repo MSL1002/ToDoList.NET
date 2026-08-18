@@ -46,7 +46,7 @@ namespace ToDo.Controllers
 
         // Handles the HTTP POST request to create a new to-do item
         [HttpPost]
-        public async Task<IActionResult> Create(ToDo.Models.DTOs.CreateItemToDo dto)
+        public async Task<IActionResult> Create(ToDo.Models.DTOs.ToDoItemDTO dto)
         {
             var todoItem = new ToDo.Models.ToDo
             {
@@ -68,7 +68,7 @@ namespace ToDo.Controllers
 
         // Handles the HTTP PUT request to edit a specific to-do item
         [HttpPut("{id}")]
-        public async Task<IActionResult> Edit(int? id, ToDo.Models.DTOs.CreateItemToDo dto)
+        public async Task<IActionResult> Edit(int? id, ToDo.Models.DTOs.ToDoItemDTO dto)
         {
             var todoItem = await _context.ToDos.FindAsync(id);
 
