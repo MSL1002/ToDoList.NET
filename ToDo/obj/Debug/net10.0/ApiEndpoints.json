@@ -1,45 +1,5 @@
 [
   {
-    "ContainingType": "ToDo.Controllers.HomeController",
-    "Method": "Index",
-    "RelativePath": "api/Home",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ToDo.Controllers.HomeController",
-    "Method": "Privacy",
-    "RelativePath": "api/Home",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ToDo.Controllers.HomeController",
-    "Method": "Error",
-    "RelativePath": "api/Home",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ToDo.Controllers.HomeController",
-    "Method": "ex",
-    "RelativePath": "api/Home",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "ToDo.Controllers.ToDoController",
     "Method": "GetAll",
     "RelativePath": "api/ToDo",
@@ -58,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "todo",
-        "Type": "ToDo.Models.ToDo",
+        "Name": "dto",
+        "Type": "ToDo.Models.DTOs.ToDoItemDTO",
         "IsRequired": true
       }
     ],
@@ -95,8 +55,8 @@
         "IsRequired": true
       },
       {
-        "Name": "toDo",
-        "Type": "ToDo.Models.ToDo",
+        "Name": "dto",
+        "Type": "ToDo.Models.DTOs.ToDoItemDTO",
         "IsRequired": true
       }
     ],

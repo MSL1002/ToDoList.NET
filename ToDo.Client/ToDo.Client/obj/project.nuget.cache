@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jg755CybUSg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Isabelle\\source\\repos\\ToDoList.NET\\ToDo.Client\\ToDo.Client\\ToDo.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Isabelle\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.11\\microsoft.aspnetcore.app.internal.assets.10.0.11.nupkg.sha512",
+    "C:\\Users\\Isabelle\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\10.0.11\\microsoft.aspnetcore.components.webassembly.10.0.11.nupkg.sha512",
+    "C:\\Users\\Isabelle\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\10.0.11\\microsoft.aspnetcore.components.webassembly.server.10.0.11.nupkg.sha512",
+    "C:\\Users\\Isabelle\\.nuget\\packages\\microsoft.jsinterop.webassembly\\10.0.11\\microsoft.jsinterop.webassembly.10.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

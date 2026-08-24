@@ -1,0 +1,51 @@
+﻿@page "/"
+@inject HttpClient Http
+@using ToDo.Client.Models;
+
+<h3>To-Do List</h3>
+
+@if (items == null)
+{
+    <p>Loading...</p>
+}
+else if (!items.Any())
+{
+    <p>No items yet.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Details</th>
+                <th>Date</th>
+                <th>Done</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in items)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Details</td>
+                    <td>@item.Date.ToShortDateString()</td>
+                    <td>@(item.IsDone ? "Yes" : "No")</td>
+                    <td>
+                        <a href="/todo/@item.Id">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<ToDoItemDTO>? items;
+
+    protected override async Task OnInitializedAsync()
+    {
+        items = await Http.GetFromJsonAsync<List<ToDoItemDTO>>("api/ToDo");
+    }
+}

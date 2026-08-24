@@ -369,7 +369,6 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebasse
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\ToDo.csproj.Up2Date
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\ToDo.dll
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\refint\ToDo.dll
@@ -380,3 +379,8 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\System.Client
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
