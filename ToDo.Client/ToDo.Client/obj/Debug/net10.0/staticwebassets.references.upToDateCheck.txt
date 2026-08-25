@@ -11,3 +11,17 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\D
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json

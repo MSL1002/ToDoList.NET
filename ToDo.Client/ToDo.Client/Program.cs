@@ -4,7 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
-    .AddInteractiveWebAssemblyComponents();
+    .AddInteractiveWebAssemblyComponents()
+    .AddInteractiveServerComponents();
 
 builder.Services.AddScoped(sp => new HttpClient
 {
@@ -31,7 +32,8 @@ app.UseAntiforgery();
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(ToDo.Client.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(ToDo.Client.Client._Imports).Assembly); 
 
 app.Run();
