@@ -18,7 +18,6 @@ else
         <thead>
             <tr>
                 <th>Title</th>
-                <th>Details</th>
                 <th>Date</th>
                 <th>Done</th>
                 <th></th>
@@ -29,7 +28,6 @@ else
             {
                 <tr>
                     <td>@item.Title</td>
-                    <td>@item.Details</td>
                     <td>@item.Date.ToShortDateString()</td>
                     <td>@(item.IsDone ? "Yes" : "No")</td>
                     <td>
