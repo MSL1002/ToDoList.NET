@@ -1,0 +1,4 @@
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\wwwroot\appsettings.Development.json
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\wwwroot\appsettings.json

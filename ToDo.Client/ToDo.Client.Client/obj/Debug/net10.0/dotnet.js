@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "ToDo.Client.Client",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-jZmAiU/TPrl2cRn3+f6ZmjcKd5dBEdwNzucYq5VkTJs=",
+    "hash": "sha256-2XEXFKI88JWatankQCEcaNtyVGjrJ93JP8ifpxNIEAk=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.vzj2a6aakt.js"
@@ -1242,16 +1242,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "ToDo.Client.Client.wasm",
-        "name": "ToDo.Client.Client.6yqj2xxg34.wasm",
-        "hash": "sha256-LoWIQWeMR0RyofqiHKp3IXV7YzB7rY3S4TxTtlSdhkk=",
+        "name": "ToDo.Client.Client.j14ira3rtg.wasm",
+        "hash": "sha256-9zdWz2sdVm4KniQTjAolFZNC/T5zRUFYxpksJ59rO6I=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "ToDo.Client.Client.pdb",
-        "name": "ToDo.Client.Client.f6b309qrvy.pdb",
-        "hash": "sha256-V3/x1qdXzhJBMi6wxJ+iqPoobdGk5mPJgydZN87sKek=",
+        "name": "ToDo.Client.Client.fln84f4ga9.pdb",
+        "hash": "sha256-c4n6vegvqo56mUYnLk8/0cYy71m2NHyVKUr6RT8bL+4=",
         "cache": "force-cache"
       }
     ],

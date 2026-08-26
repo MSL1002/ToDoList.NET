@@ -1,6 +1,6 @@
 [
   {
-    "Name": "New Profile",
+    "Name": "Run Client + API",
     "Projects": [
       {
         "Path": "ToDo\\ToDo.csproj",
