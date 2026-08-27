@@ -1,0 +1,102 @@
+﻿@page "/edit/{Id:int}"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using ToDo.Client.Models
+
+<h2>Edit</h2>
+
+@if (editItem == null && !notFound){
+    <p>Loading...</p>
+}
+else if (notFound)
+{
+    <p>This item could not be found.</p>
+    <a href="/">Back to list</a>
+}
+else
+{
+    <EditForm Model="editItem" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <InputText class="form-control" @bind-Value="editItem!.Title" />
+            <ValidationMessage For="() => editItem.Title" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Details</label>
+            <InputTextArea class="form-control" @bind-Value="editItem.Details" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Date</label>
+            <InputDate class="form-control" @bind-Value="editItem.Date" />
+        </div>
+
+        <div class="mb-3 form-check">
+            <InputCheckbox class="form-check-input" @bind-Value="editItem.IsDone" />
+            <label class="form-check-label">Is Done</label>
+        </div>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger">@errorMessage</div>
+        }
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="/todo/@Id" class="btn btn-secondary">Cancel</a>
+    </EditForm>
+}
+
+@code{
+    [Parameter]
+    public int Id { get; set; }
+
+
+    private ToDoItemCreateDTO? editItem;
+    private bool notFound = false;
+    private string errorMessage = "";
+
+    // get initial item to edit
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetAsync($"api/todo/{Id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            var current = await response.Content.ReadFromJsonAsync<ToDoItemDTO>();
+            if (current != null)
+            {
+                editItem = new ToDoItemCreateDTO
+                {
+                    Title = current.Title,
+                    Details = current.Details,
+                    Date = current.Date,
+                    IsDone = current.IsDone
+                };
+            }
+        }
+        else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+        {
+            notFound = true;
+        }
+    }
+
+    // submit edited item
+    private async Task HandleValidSubmit()
+    {
+        var response = await Http.PutAsJsonAsync($"api/todo/{Id}", editItem);
+
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo($"/todo/{Id}");
+        }
+        else
+        {
+            errorMessage = "Failed to update item. Please check your input and try again.";
+        }
+    }
+}
