@@ -207,6 +207,8 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\D
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\Microsoft.DotNet.HotReload.WebAssembly.Browser.jiityjz7hu.wasm
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.anxq2su7en.wasm
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.qlbkvcuu7e.pdb
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\dotnet.js
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.286cdd0mnj.wasm.gz
@@ -416,6 +418,8 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\D
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\Microsoft.DotNet.HotReload.WebAssembly.Browser.jiityjz7hu.wasm.gz
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.anxq2su7en.wasm.gz
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.qlbkvcuu7e.pdb.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\dotnet.js.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\ToDo.Client.Client.staticwebassets.runtime.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\ToDo.Client.Client.staticwebassets.endpoints.json
@@ -1056,6 +1060,9 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\D
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\ew3b4b6o8d-{0}-tptq2av103-tptq2av103.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\sgb12mwouu-{0}-lfu7j35m59-lfu7j35m59.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\pmnw56ul7d-{0}-jiityjz7hu-jiityjz7hu.gz
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\mfrxlra9u0-{0}-anxq2su7en-anxq2su7en.gz
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\63hec62708-{0}-qlbkvcuu7e-qlbkvcuu7e.gz
+C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\z18w99tvgy-{0}-hw49pz8euu-hw49pz8euu.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\dv1si9gkb7-{0}-tswichycbp-tswichycbp.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\3uhq4wnje9-{0}-tswichycbp-tswichycbp.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.build.json
@@ -1068,11 +1075,3 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\D
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\refint\ToDo.Client.Client.dll
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\ToDo.Client.Client.pdb
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\ref\ToDo.Client.Client.dll
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.8udycqkyuy.wasm
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.hqvwq3ucyq.pdb
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.8udycqkyuy.wasm.gz
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\bin\Debug\net10.0\wwwroot\_framework\ToDo.Client.Client.hqvwq3ucyq.pdb.gz
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\mfrxlra9u0-{0}-8udycqkyuy-8udycqkyuy.gz
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\63hec62708-{0}-hqvwq3ucyq-hqvwq3ucyq.gz
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo.Client\ToDo.Client.Client\obj\Debug\net10.0\compressed\z18w99tvgy-{0}-j3aj0smssu-j3aj0smssu.gz
