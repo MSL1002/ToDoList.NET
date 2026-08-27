@@ -241,9 +241,7 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\ToDo.sourceli
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\scopedcss\bundle\ToDo.styles.css
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\scopedcss\projectbundle\ToDo.bundle.scp.css
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\ofa40bqe71-{0}-t8la6gvvmz-t8la6gvvmz.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\j9swiz3yzq-{0}-90yqlj465b-90yqlj465b.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\vltxs1u3vm-{0}-6b9nfc4n3r-6b9nfc4n3r.gz
@@ -362,8 +360,6 @@ C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\33
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\qjjrxmyo15-{0}-ehgnz7f14e-ehgnz7f14e.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\tnfpyghx9s-{0}-5pze98is44-5pze98is44.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\ijh3mxen98-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\fd39p38esc-{0}-zxnkgokuur-zxnkgokuur.gz
-C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\compressed\mvwrnbjpqn-{0}-zxnkgokuur-zxnkgokuur.gz
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\Isabelle\source\repos\ToDoList.NET\ToDo\obj\Debug\net10.0\staticwebassets.development.json
