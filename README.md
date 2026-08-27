@@ -36,7 +36,7 @@ dotnet ef database update
         </code>
     </pre>
     <ol start="5">
-        <li>Configure multiple startup projects, Start the following projects:</li>
+        <li>Configure multiple startup projects, start the following projects:</li>
     </ol>
     <pre>
         <code>
