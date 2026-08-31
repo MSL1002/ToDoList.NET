@@ -1,0 +1,93 @@
+﻿@page "/todo/{Id:int}"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+@using ToDo.Client.Models;
+
+
+<h2>Details</h2>
+
+@if (item == null && !notFound)
+{
+    <p>Loading...</p>
+}
+else if (notFound)
+{
+    <p>This item could not be found.</p>
+    <a href="/">Back to list</a>
+}
+else
+{
+    <div class="alert alert-info">
+        <h4>To Do</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Title
+            </dt>
+            <dd class="col-sm-10">
+                @item!.Title
+            </dd>
+            <dt class="col-sm-2">
+                Details
+            </dt>
+            <dd class="col-sm-10">
+                @item.Details
+            </dd>
+            <dt class="col-sm-2">
+                Date
+            </dt>
+            <dd class="col-sm-10">
+                @item.Date
+            </dd>
+            <dt class="col-sm-2">
+                Status
+            </dt>
+            <dd class="col-sm-10">
+                @(item.IsDone ? "Done" : "Not done")
+            </dd>
+        </dl>
+    </div>
+    <a href="/" class="btn btn-info">Back to List</a>
+    <button type="button" @onclick="Delete" class="btn btn-danger">Delete</button>
+    <a href="/edit/@item.Id" class="btn btn-primary">Edit</a>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private ToDoItemDTO? item;
+    private bool notFound = false;
+
+    private string errorMessage = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetAsync($"api/ToDo/{Id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            item = await response.Content.ReadFromJsonAsync<ToDoItemDTO>();
+        }
+        else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+        {
+            notFound = true;
+        }
+    }
+
+    private async Task Delete()
+    {
+        Console.WriteLine("Delete pressed");
+        bool confirmed = await JS.InvokeAsync<bool>("confirm", "Are you sure you want to delete this item?");
+        if (!confirmed) return;
+
+        var response = await Http.DeleteAsync($"api/ToDo/{Id}");
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/");
+        }
+        else { errorMessage = "Cannot delete item"; }
+    }
+}

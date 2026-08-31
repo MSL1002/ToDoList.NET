@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Run Client + API",
+    "Projects": [
+      {
+        "Path": "ToDo\\ToDo.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ToDo.Client\\ToDo.Client\\ToDo.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

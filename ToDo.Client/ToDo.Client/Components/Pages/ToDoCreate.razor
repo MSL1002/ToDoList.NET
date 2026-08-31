@@ -1,0 +1,60 @@
+﻿@page "/new-item"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using ToDo.Client.Models
+
+<h2>Create</h2>
+
+<EditForm Model="newItem" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label class="form-label">Title</label>
+        <InputText class="form-control" @bind-Value="newItem.Title" />
+        <ValidationMessage For="() => newItem.Title" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Details</label>
+        <InputTextArea class="form-control" @bind-Value="newItem.Details" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Date</label>
+        <InputDate class="form-control" @bind-Value="newItem.Date" />
+    </div>
+
+    <div class="form-group form-check">
+        <InputCheckbox class="form-check-input" @bind-Value="newItem.IsDone" />
+        <label class="form-check-label">Is Done</label>
+    </div>
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger">@errorMessage</div>
+    }
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a href="/" class="btn btn-secondary">Cancel</a>
+</EditForm>
+
+@code{
+    private ToDoItemCreateDTO newItem = new();
+    private string errorMessage = "";
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await Http.PostAsJsonAsync("api/todo", newItem);
+
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+            errorMessage = "Failed to create item. Please check your input and try again.";
+        }
+    }
+}
